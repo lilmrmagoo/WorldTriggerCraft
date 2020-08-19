@@ -1,0 +1,22 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:TriggercaseBlack"
+      },
+      {
+        "value": "CUSTOM:TriggercaseRed"
+      },
+      {
+        "value": "CUSTOM:TriggercaseGreen"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "triggercase_tag",
+    "namespace": "mod"
+  }
+}

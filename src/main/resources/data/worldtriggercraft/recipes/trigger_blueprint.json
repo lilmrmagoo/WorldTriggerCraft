@@ -1,0 +1,24 @@
+{
+  "group": "worldtriggercraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "worldtriggercraft:neighbour_tech"
+    },
+    "1": {
+      "item": "minecraft:paper"
+    },
+    "2": {
+      "item": "worldtriggercraft:neighbour_tech"
+    }
+  },
+  "result": {
+    "item": "worldtriggercraft:neighbourtech_blueprint",
+    "count": 1
+  }
+}

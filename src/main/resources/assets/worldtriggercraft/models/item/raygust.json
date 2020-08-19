@@ -1,0 +1,7 @@
+{
+  "parent": "worldtriggercraft:custom/raygust",
+  "textures": {
+    "0": "worldtriggercraft:blocks/raygust",
+    "particle": "worldtriggercraft:items/trigger"
+  }
+}

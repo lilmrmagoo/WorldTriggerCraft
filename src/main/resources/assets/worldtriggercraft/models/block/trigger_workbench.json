@@ -1,0 +1,8 @@
+{
+  "parent": "worldtriggercraft:custom/triggreworkbench_temp",
+  "textures": {
+    "all": "worldtriggercraft:blocks/trigger_workbench",
+    "particle": "worldtriggercraft:blocks/trigger_workbench",
+    "0": "worldtriggercraft:blocks/trigger_workbench"
+  }
+}

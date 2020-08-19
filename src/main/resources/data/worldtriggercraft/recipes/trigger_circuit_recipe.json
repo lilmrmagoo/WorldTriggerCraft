@@ -1,0 +1,26 @@
+{
+  "group": "worldtriggercraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:green_dye"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "minecraft:green_dye"
+    },
+    "4": {
+      "item": "worldtriggercraft:neighbourtech_blueprint"
+    }
+  },
+  "result": {
+    "item": "worldtriggercraft:trigger_circuit",
+    "count": 1
+  }
+}

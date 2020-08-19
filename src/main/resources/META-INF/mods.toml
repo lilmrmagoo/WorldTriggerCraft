@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+
+[[mods]]
+modId="worldtriggercraft"
+version="1.0.0"
+displayName="WorldTriggerCraft"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="lilmr, MCreator"
+
+[[dependencies.worldtriggercraft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

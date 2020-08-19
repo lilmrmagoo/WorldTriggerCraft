@@ -1,0 +1,16 @@
+{
+  "group": "worldtriggercraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "worldtriggercraft:neighbourtech_blueprint"
+    }
+  ],
+  "result": {
+    "item": "worldtriggercraft:blank_trigger_chip",
+    "count": 1
+  }
+}

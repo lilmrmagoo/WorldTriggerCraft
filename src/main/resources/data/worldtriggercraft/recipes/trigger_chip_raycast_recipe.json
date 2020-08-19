@@ -1,0 +1,16 @@
+{
+  "group": "worldtriggercraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "worldtriggercraft:blank_trigger_chip"
+    },
+    {
+      "item": "minecraft:shield"
+    }
+  ],
+  "result": {
+    "item": "worldtriggercraft:trigger_chip_raycast",
+    "count": 1
+  }
+}

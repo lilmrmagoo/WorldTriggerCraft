@@ -1,0 +1,51 @@
+{
+  "_fv": 10,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "",
+    "enableBody": true,
+    "textureBody": "traineeoutfit",
+    "enableLeggings": true,
+    "textureLeggings": "traineeoutfit",
+    "enableBoots": true,
+    "textureBoots": "traineeoutfit",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "armorTextureFile": "placeholder",
+    "helmetName": "Trainee Suit Helmet",
+    "bodyName": "Trainee Suit Body",
+    "leggingsName": "Trainee Suit Leggings",
+    "bootsName": "Trainee Suit Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "ModeltraineeSuit",
+    "bodyModelPart": "field_178721_j",
+    "bodyModelTexture": "traineemale.png",
+    "leggingsModelName": "ModeltraineeSuit",
+    "leggingsModelPartL": "field_178722_k",
+    "leggingsModelPartR": "field_178721_j",
+    "leggingsModelTexture": "traineemale.png",
+    "bootsModelName": "ModeltraineeSuit",
+    "bootsModelPartL": "bootl",
+    "bootsModelPartR": "bootr",
+    "bootsModelTexture": "traineemale.png",
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

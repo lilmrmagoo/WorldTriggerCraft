@@ -1,0 +1,12 @@
+{
+  "_fv": 10,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Trigger ON!",
+    "keyBindingCategoryKey": "world_trigger_keys",
+    "onKeyPressed": {
+      "name": "Triggeractivation"
+    }
+  }
+}

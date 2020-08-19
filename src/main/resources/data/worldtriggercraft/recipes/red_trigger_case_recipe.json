@@ -1,0 +1,16 @@
+{
+  "group": "worldtriggercraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "worldtriggercraft:triggercase_black"
+    }
+  ],
+  "result": {
+    "item": "worldtriggercraft:triggercase_red",
+    "count": 1
+  }
+}

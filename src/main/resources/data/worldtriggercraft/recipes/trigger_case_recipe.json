@@ -1,0 +1,30 @@
+{
+  "group": "worldtriggercraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:black_dye"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "4": {
+      "item": "worldtriggercraft:neighbourtech_blueprint"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "worldtriggercraft:triggercase_black",
+    "count": 1
+  }
+}

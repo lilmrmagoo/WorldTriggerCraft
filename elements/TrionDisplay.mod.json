@@ -1,0 +1,39 @@
+{
+  "_fv": 10,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:trionsync>/<VAR:integer:maxtrionsync>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:trionsync>/<VAR:integer:maxtrionsync>",
+          "x": 154,
+          "y": 174
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:trion>/<ENBT:number:maxtrion>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:trion>/<ENBT:number:maxtrion>",
+          "x": 187,
+          "y": 210
+        }
+      }
+    ],
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "TestDisplayOverlayIngame"
+    }
+  }
+}
