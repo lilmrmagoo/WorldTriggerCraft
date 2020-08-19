@@ -5,18 +5,15 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:Raycast"
-      },
-      {
-        "value": "CUSTOM:Kogetsu"
-      },
-      {
         "value": "CUSTOM:ScorpionDefault"
+      },
+      {
+        "value": "CUSTOM:ScorpionKazama"
       }
     ],
     "blocks": [],
     "functions": [],
-    "name": "trigger_tag",
+    "name": "scorpion_triggers",
     "namespace": "mod"
   }
 }

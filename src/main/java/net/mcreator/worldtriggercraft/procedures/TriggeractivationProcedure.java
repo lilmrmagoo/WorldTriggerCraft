@@ -17,8 +17,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.worldtriggercraft.item.TriggerItem;
+import net.mcreator.worldtriggercraft.item.ScorpionKazamaItem;
+import net.mcreator.worldtriggercraft.item.ScorpionDefaultItem;
 import net.mcreator.worldtriggercraft.item.RedTriggerItem;
 import net.mcreator.worldtriggercraft.item.RaycastItem;
+import net.mcreator.worldtriggercraft.item.KogetsuItem;
 import net.mcreator.worldtriggercraft.item.GreenTriggerItem;
 import net.mcreator.worldtriggercraft.WorldtriggercraftModElements;
 
@@ -80,11 +83,14 @@ public class TriggeractivationProcedure extends WorldtriggercraftModElements.Mod
 							mcserv.getPlayerList().sendMessage(new StringTextComponent("set triggershape"));
 					}
 				} else if (((triggershape) == 2)) {
-					triggershapeItem = new ItemStack(RaycastItem.block, (int) (1));
+					triggershapeItem = new ItemStack(KogetsuItem.block, (int) (1));
 					trioncost = (double) 16;
 				} else if (((triggershape) == 3)) {
-					triggershapeItem = new ItemStack(RaycastItem.block, (int) (1));
+					triggershapeItem = new ItemStack(ScorpionDefaultItem.block, (int) (1));
 					trioncost = (double) 11;
+				} else if (((triggershape) == 4)) {
+					triggershapeItem = new ItemStack(ScorpionKazamaItem.block, (int) (1));
+					trioncost = (double) 10;
 				}
 				if (((entity.getPersistentData().getDouble("trion")) >= (trioncost))) {
 					entity.getPersistentData().putBoolean("trionBody", (true));

@@ -10,6 +10,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.worldtriggercraft.item.RaycastItem;
+import net.mcreator.worldtriggercraft.item.KogetsuItem;
 import net.mcreator.worldtriggercraft.WorldtriggercraftModElements;
 
 import java.util.Map;
@@ -35,7 +36,7 @@ public class SubTriggerSummonProcedure extends WorldtriggercraftModElements.ModE
 			subtriggershapeitem = new ItemStack(RaycastItem.block, (int) (1));
 			trioncost = (double) 11;
 		} else if (((subtriggershape) == 2)) {
-			subtriggershapeitem = new ItemStack(RaycastItem.block, (int) (1));
+			subtriggershapeitem = new ItemStack(KogetsuItem.block, (int) (1));
 			trioncost = (double) 6;
 		} else if (((subtriggershape) == 3)) {
 			subtriggershapeitem = new ItemStack(RaycastItem.block, (int) (1));

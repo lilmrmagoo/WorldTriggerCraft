@@ -6,7 +6,9 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.worldtriggercraft.item.TriggerChipScorpionItem;
 import net.mcreator.worldtriggercraft.item.TriggerChipRaycastItem;
+import net.mcreator.worldtriggercraft.item.TriggerChipKogetsuItem;
 import net.mcreator.worldtriggercraft.WorldtriggercraftModElements;
 
 import java.util.function.Supplier;
@@ -54,6 +56,66 @@ public class SubTriggerCraftingAssembleProcedure extends WorldtriggercraftModEle
 					return ItemStack.EMPTY;
 				}
 			}.getItemStack((int) (0))).getOrCreateTag().putDouble("SubtriggerShape", 1);
+		} else if (((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (2))).getItem() == new ItemStack(TriggerChipKogetsuItem.block, (int) (1)).getItem())) {
+			(new Object() {
+				public ItemStack getItemStack(int sltid) {
+					Entity _ent = entity;
+					if (_ent instanceof ServerPlayerEntity) {
+						Container _current = ((ServerPlayerEntity) _ent).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getOrCreateTag().putDouble("SubtriggerShape", 2);
+		} else if (((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (2))).getItem() == new ItemStack(TriggerChipScorpionItem.block, (int) (1)).getItem())) {
+			(new Object() {
+				public ItemStack getItemStack(int sltid) {
+					Entity _ent = entity;
+					if (_ent instanceof ServerPlayerEntity) {
+						Container _current = ((ServerPlayerEntity) _ent).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getOrCreateTag().putDouble("SubtriggerShape", 3);
 		}
 	}
 }

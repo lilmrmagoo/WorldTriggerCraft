@@ -74,7 +74,9 @@ public class TraineeSuitItem extends WorldtriggercraftModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {
 				BipedModel armorModel = new BipedModel();
-				armorModel.bipedBody = new ModeltraineeSuit().field_178721_j;
+				armorModel.bipedBody = new ModeltraineeSuit().field_78115_e;
+				armorModel.bipedLeftArm = new ModeltraineeSuit().field_178724_i;
+				armorModel.bipedRightArm = new ModeltraineeSuit().field_178723_h;
 				armorModel.isSneak = living.isSneaking();
 				armorModel.isSitting = defaultModel.isSitting;
 				armorModel.isChild = living.isChild();

@@ -5,7 +5,10 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.worldtriggercraft.item.TraineeSuitItem;
+import net.mcreator.worldtriggercraft.item.ScorpionKazamaItem;
+import net.mcreator.worldtriggercraft.item.ScorpionDefaultItem;
 import net.mcreator.worldtriggercraft.item.RaycastItem;
+import net.mcreator.worldtriggercraft.item.KogetsuItem;
 import net.mcreator.worldtriggercraft.WorldtriggercraftModElements;
 
 import java.util.Map;
@@ -24,6 +27,14 @@ public class ClearAllTriggersProcedure extends WorldtriggercraftModElements.ModE
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(RaycastItem.block, (int) (1)).getItem() == p.getItem(), (int) 64);
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(KogetsuItem.block, (int) (1)).getItem() == p.getItem(), (int) 64);
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(ScorpionDefaultItem.block, (int) (1)).getItem() == p.getItem(),
+					(int) 64);
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(ScorpionKazamaItem.block, (int) (1)).getItem() == p.getItem(),
+					(int) 64);
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(TraineeSuitItem.body, (int) (1)).getItem() == p.getItem(),
 					(int) 64);

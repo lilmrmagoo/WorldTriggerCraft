@@ -693,6 +693,112 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "trion_display"
+    },
+    {
+      "name": "Kogetsu",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kogetsu"
+    },
+    {
+      "name": "TriggerChipKogetsu",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trigger_chip_kogetsu"
+    },
+    {
+      "name": "TriggerChip",
+      "type": "tag",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trigger_chip"
+    },
+    {
+      "name": "ScorpionTriggers",
+      "type": "tag",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scorpion_triggers"
+    },
+    {
+      "name": "ScorpionDefault",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scorpion_default"
+    },
+    {
+      "name": "ScorpionShapeChange",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scorpion_shape_change",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChangeTriggerShapePressed",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "change_trigger_shape_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChangeTriggerShape",
+      "type": "keybind",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "change_trigger_shape"
+    },
+    {
+      "name": "ScorpionKazama",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scorpion_kazama"
+    },
+    {
+      "name": "TriggerChipScorpion",
+      "type": "item",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trigger_chip_scorpion"
     }
   ],
   "variable_elements": [
@@ -723,14 +829,20 @@
       "item.worldtriggercraft.green_trigger": "Trigger",
       "item.worldtriggercraft.raygust": "Raygust",
       "item.worldtriggercraft.red_trigger": "Trigger",
+      "item.worldtriggercraft.scorpion_kazama": "Scorpion (Kazama)",
+      "item.worldtriggercraft.kogetsu": "Kogetsu",
       "item.worldtriggercraft.trigger_chip_raycast": "Trigger Chip Raycast",
       "item.worldtriggercraft.trigger_circuit": "Trigger Circuit",
       "itemGroup.tabworld_trigger_tab": "World Trigger Tab",
       "item.worldtriggercraft.triggercase_green": "Triggercase Black",
       "item.worldtriggercraft.triggercase_black": "Triggercase Black",
+      "item.worldtriggercraft.scorpion_default": "Scorpion",
       "item.worldtriggercraft.trainee_suitboots": "Trainee Suit Boots",
       "item.worldtriggercraft.trainee_suitbody": "Trainee Suit Body",
+      "item.worldtriggercraft.trigger_chip_scorpion": "Trigger Chip Scorpion",
+      "item.worldtriggercraft.trigger_chip_kogetsu": "Trigger Chip Kogetsu",
       "key.mcreator.trigger_on": "Trigger ON!",
+      "key.mcreator.change_trigger_shape": "Change Trigger Shape",
       "item.worldtriggercraft.blank_trigger_chip": "Blank Trigger Chip",
       "item.worldtriggercraft.trainee_suitlegs": "Trainee Suit Leggings",
       "item.worldtriggercraft.trainee_suit_leggings": "Trainee Suit Leggings",

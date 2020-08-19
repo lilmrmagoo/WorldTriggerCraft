@@ -1,0 +1,7 @@
+{
+  "parent": "worldtriggercraft:custom/scorpion_kazama",
+  "textures": {
+    "0": "worldtriggercraft:blocks/scorpion_kazama",
+    "particle": "worldtriggercraft:items/trigger"
+  }
+}

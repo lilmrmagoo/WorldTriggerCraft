@@ -14,7 +14,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.widget.TextFieldWidget;
 
 import net.mcreator.worldtriggercraft.item.TriggerCircuitItem;
+import net.mcreator.worldtriggercraft.item.TriggerChipScorpionItem;
 import net.mcreator.worldtriggercraft.item.TriggerChipRaycastItem;
+import net.mcreator.worldtriggercraft.item.TriggerChipKogetsuItem;
 import net.mcreator.worldtriggercraft.WorldtriggercraftModElements;
 
 import java.util.function.Supplier;
@@ -79,32 +81,23 @@ public class TriggerCraftingAssembleProcedure extends WorldtriggercraftModElemen
 					if (mcserv != null)
 						mcserv.getPlayerList().sendMessage(new StringTextComponent("assemble case and chip detecd"));
 				}
-				if (((new Object() {
-					public ItemStack getItemStack(int sltid) {
-						Entity _ent = entity;
-						if (_ent instanceof ServerPlayerEntity) {
-							Container _current = ((ServerPlayerEntity) _ent).openContainer;
-							if (_current instanceof Supplier) {
-								Object invobj = ((Supplier) _current).get();
-								if (invobj instanceof Map) {
-									return ((Slot) ((Map) invobj).get(sltid)).getStack();
+				if ((ItemTags.getCollection().getOrCreate(new ResourceLocation(("trigger_chip").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains((new Object() {
+							public ItemStack getItemStack(int sltid) {
+								Entity _ent = entity;
+								if (_ent instanceof ServerPlayerEntity) {
+									Container _current = ((ServerPlayerEntity) _ent).openContainer;
+									if (_current instanceof Supplier) {
+										Object invobj = ((Supplier) _current).get();
+										if (invobj instanceof Map) {
+											return ((Slot) ((Map) invobj).get(sltid)).getStack();
+										}
+									}
 								}
+								return ItemStack.EMPTY;
 							}
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack((int) (2))).getItem() == new ItemStack(TriggerChipRaycastItem.block, (int) (1)).getItem())) {
-					{
-						MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-						if (mcserv != null)
-							mcserv.getPlayerList().sendMessage(new StringTextComponent("assemble raygust triggerd"));
-					}
-					{
-						Map<String, Object> $_dependencies = new HashMap<>();
-						$_dependencies.put("entity", entity);
-						CoulouredTriggerCraftingProcedure.executeProcedure($_dependencies);
-					}
-					(new Object() {
+						}.getItemStack((int) (2))).getItem()))) {
+					if (((new Object() {
 						public ItemStack getItemStack(int sltid) {
 							Entity _ent = entity;
 							if (_ent instanceof ServerPlayerEntity) {
@@ -118,7 +111,113 @@ public class TriggerCraftingAssembleProcedure extends WorldtriggercraftModElemen
 							}
 							return ItemStack.EMPTY;
 						}
-					}.getItemStack((int) (0))).getOrCreateTag().putDouble("triggerShape", 1);
+					}.getItemStack((int) (2))).getItem() == new ItemStack(TriggerChipRaycastItem.block, (int) (1)).getItem())) {
+						{
+							MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
+							if (mcserv != null)
+								mcserv.getPlayerList().sendMessage(new StringTextComponent("assemble raygust triggerd"));
+						}
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("entity", entity);
+							CoulouredTriggerCraftingProcedure.executeProcedure($_dependencies);
+						}
+						(new Object() {
+							public ItemStack getItemStack(int sltid) {
+								Entity _ent = entity;
+								if (_ent instanceof ServerPlayerEntity) {
+									Container _current = ((ServerPlayerEntity) _ent).openContainer;
+									if (_current instanceof Supplier) {
+										Object invobj = ((Supplier) _current).get();
+										if (invobj instanceof Map) {
+											return ((Slot) ((Map) invobj).get(sltid)).getStack();
+										}
+									}
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack((int) (0))).getOrCreateTag().putDouble("triggerShape", 1);
+					} else if (((new Object() {
+						public ItemStack getItemStack(int sltid) {
+							Entity _ent = entity;
+							if (_ent instanceof ServerPlayerEntity) {
+								Container _current = ((ServerPlayerEntity) _ent).openContainer;
+								if (_current instanceof Supplier) {
+									Object invobj = ((Supplier) _current).get();
+									if (invobj instanceof Map) {
+										return ((Slot) ((Map) invobj).get(sltid)).getStack();
+									}
+								}
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack((int) (2))).getItem() == new ItemStack(TriggerChipKogetsuItem.block, (int) (1)).getItem())) {
+						{
+							MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
+							if (mcserv != null)
+								mcserv.getPlayerList().sendMessage(new StringTextComponent("assemble Kogetsu triggerd"));
+						}
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("entity", entity);
+							CoulouredTriggerCraftingProcedure.executeProcedure($_dependencies);
+						}
+						(new Object() {
+							public ItemStack getItemStack(int sltid) {
+								Entity _ent = entity;
+								if (_ent instanceof ServerPlayerEntity) {
+									Container _current = ((ServerPlayerEntity) _ent).openContainer;
+									if (_current instanceof Supplier) {
+										Object invobj = ((Supplier) _current).get();
+										if (invobj instanceof Map) {
+											return ((Slot) ((Map) invobj).get(sltid)).getStack();
+										}
+									}
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack((int) (0))).getOrCreateTag().putDouble("triggerShape", 2);
+					} else if (((new Object() {
+						public ItemStack getItemStack(int sltid) {
+							Entity _ent = entity;
+							if (_ent instanceof ServerPlayerEntity) {
+								Container _current = ((ServerPlayerEntity) _ent).openContainer;
+								if (_current instanceof Supplier) {
+									Object invobj = ((Supplier) _current).get();
+									if (invobj instanceof Map) {
+										return ((Slot) ((Map) invobj).get(sltid)).getStack();
+									}
+								}
+							}
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack((int) (2))).getItem() == new ItemStack(TriggerChipScorpionItem.block, (int) (1)).getItem())) {
+						{
+							MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
+							if (mcserv != null)
+								mcserv.getPlayerList().sendMessage(new StringTextComponent("assemble scorpion triggerd"));
+						}
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("entity", entity);
+							CoulouredTriggerCraftingProcedure.executeProcedure($_dependencies);
+						}
+						(new Object() {
+							public ItemStack getItemStack(int sltid) {
+								Entity _ent = entity;
+								if (_ent instanceof ServerPlayerEntity) {
+									Container _current = ((ServerPlayerEntity) _ent).openContainer;
+									if (_current instanceof Supplier) {
+										Object invobj = ((Supplier) _current).get();
+										if (invobj instanceof Map) {
+											return ((Slot) ((Map) invobj).get(sltid)).getStack();
+										}
+									}
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack((int) (0))).getOrCreateTag().putDouble("triggerShape", 3);
+					}
 					{
 						Map<String, Object> $_dependencies = new HashMap<>();
 						$_dependencies.put("entity", entity);
@@ -128,21 +227,7 @@ public class TriggerCraftingAssembleProcedure extends WorldtriggercraftModElemen
 						Map<String, Object> $_dependencies = new HashMap<>();
 						OptTriggerCraftingAssembleProcedure.executeProcedure($_dependencies);
 					}
-					((new Object() {
-						public ItemStack getItemStack(int sltid) {
-							Entity _ent = entity;
-							if (_ent instanceof ServerPlayerEntity) {
-								Container _current = ((ServerPlayerEntity) _ent).openContainer;
-								if (_current instanceof Supplier) {
-									Object invobj = ((Supplier) _current).get();
-									if (invobj instanceof Map) {
-										return ((Slot) ((Map) invobj).get(sltid)).getStack();
-									}
-								}
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack((int) (0)))).setDisplayName(new StringTextComponent((new Object() {
+					if ((!(((new Object() {
 						public String getText() {
 							TextFieldWidget textField = (TextFieldWidget) guistate.get("text:Name");
 							if (textField != null) {
@@ -150,7 +235,31 @@ public class TriggerCraftingAssembleProcedure extends WorldtriggercraftModElemen
 							}
 							return "";
 						}
-					}.getText())));
+					}.getText())).equals("")))) {
+						((new Object() {
+							public ItemStack getItemStack(int sltid) {
+								Entity _ent = entity;
+								if (_ent instanceof ServerPlayerEntity) {
+									Container _current = ((ServerPlayerEntity) _ent).openContainer;
+									if (_current instanceof Supplier) {
+										Object invobj = ((Supplier) _current).get();
+										if (invobj instanceof Map) {
+											return ((Slot) ((Map) invobj).get(sltid)).getStack();
+										}
+									}
+								}
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack((int) (0)))).setDisplayName(new StringTextComponent((new Object() {
+							public String getText() {
+								TextFieldWidget textField = (TextFieldWidget) guistate.get("text:Name");
+								if (textField != null) {
+									return textField.getText();
+								}
+								return "";
+							}
+						}.getText())));
+					}
 					{
 						Map<String, Object> $_dependencies = new HashMap<>();
 						$_dependencies.put("entity", entity);

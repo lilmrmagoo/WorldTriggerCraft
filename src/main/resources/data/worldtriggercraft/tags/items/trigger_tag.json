@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "worldtriggercraft:raygust"
+    "worldtriggercraft:raygust",
+    "worldtriggercraft:kogetsu",
+    "worldtriggercraft:scorpion_default"
   ]
 }

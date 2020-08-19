@@ -1,0 +1,12 @@
+{
+  "_fv": 10,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Change Trigger Shape",
+    "keyBindingCategoryKey": "world_trigger_keys",
+    "onKeyPressed": {
+      "name": "ChangeTriggerShapePressed"
+    }
+  }
+}

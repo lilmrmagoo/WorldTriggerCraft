@@ -1,0 +1,30 @@
+{
+  "_fv": 10,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "trigger",
+    "customModelName": "scorpion_kazama:default",
+    "name": "Scorpion (Kazama)",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 7.0,
+    "specialInfo": [
+      "this triggers shape can change."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "Armoursavegui",
+    "inventorySize": 4,
+    "inventoryStackSize": 1
+  }
+}

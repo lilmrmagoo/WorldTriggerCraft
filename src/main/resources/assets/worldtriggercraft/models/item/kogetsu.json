@@ -1,0 +1,7 @@
+{
+  "parent": "worldtriggercraft:custom/kogetsu",
+  "textures": {
+    "0": "worldtriggercraft:blocks/kogetsu2",
+    "particle": "worldtriggercraft:items/trigger"
+  }
+}

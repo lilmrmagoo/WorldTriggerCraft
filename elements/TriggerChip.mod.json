@@ -5,18 +5,18 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:Raycast"
+        "value": "CUSTOM:TriggerChipKogetsu"
       },
       {
-        "value": "CUSTOM:Kogetsu"
+        "value": "CUSTOM:TriggerChipRaycast"
       },
       {
-        "value": "CUSTOM:ScorpionDefault"
+        "value": "CUSTOM:TriggerChipScorpion"
       }
     ],
     "blocks": [],
     "functions": [],
-    "name": "trigger_tag",
+    "name": "trigger_chip",
     "namespace": "mod"
   }
 }
